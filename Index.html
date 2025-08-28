@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <link rel="stylesheet" href="style.css">
+    <title>Country Information</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Country Information</h2>
+        </header>
+        <div class="second-container">
+            <div class="search-country">
+                <button id="search-trigger">Search</button> 
+                <input type="text" id="search-input" placeholder="Search country here">
+            </div>
+            <div class="filter-regions">
+                <span class="filter">
+                    <p>Filter by Region</p>
+                    <i class="fa fa-caret-down"></i> 
+                </span>
+                <div class="regions">
+                    <p data-region="all">All Regions</p>
+                    <p data-region="africa">Africa</p>
+                    <p data-region="americas">Americas</p>
+                    <p data-region="asia">Asia</p>
+                    <p data-region="europe">Europe</p>
+                    <p data-region="oceania">Oceania</p>
+                </div>
+            </div>
+        </div>
+        <div class="countries-container">
+            <div class="loading">Loading countries...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
